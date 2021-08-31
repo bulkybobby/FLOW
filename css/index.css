@@ -1,0 +1,181 @@
+/* 웹폰트 */
+@font-face{
+    font-family: 'franklinhvy';
+    src: url(/fonts/ITCFranklinGothicStd-Hvy.otf) format('opentype');}
+
+@font-face{
+    font-family: 'kopupbold';
+    src: url(/fonts/KoPubWorld\ Dotum_Pro\ Bold.otf) format('opentype');}
+
+/* 스크롤바 안보이게  */
+::-webkit-scrollbar{
+    display: none;}
+
+/* 여백 없이 꽉 채운 화면, 배경색상 적용, 폰트 패밀리 적용 */
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 255, 0);
+    font-family: 'franklinhvy';}
+
+/* a클래스의 폰트  */
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    font-family: 'franklinhvy';}
+
+p{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'kopupbold';
+
+}
+    
+.flow-header{
+    z-index: 3;
+    width: 100%;
+    height: 100px;
+    max-height: 100%;
+    position: fixed;
+    top:0;
+    background-color: rgb(0, 255, 0);}
+
+
+.nav-menu{
+    margin: 0px 3%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-about, .nav-works{
+    display: inline-block;
+}
+
+.nav-about{
+    padding-right: 30px;
+}
+
+.mini-hamburger{
+    display: none;
+    position: absolute;
+    left: 3%;
+}
+
+.mini-contact{
+    display: none;
+    position: absolute;
+    right: 3%;
+}
+
+.flow-body{
+    margin: 0;
+    padding-top: 10%;
+    width: 100%;
+    height: 75%;
+    max-height: 100%;
+}
+
+.body-wrap, .body-wrap{position: relative;}
+
+.body-wrap{
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.project-covers-wrap{
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.project-cover{
+    display: block;
+    position: relative;
+    margin-right: 25px;
+    
+}
+
+.project-cover:nth-child(3n+1) {
+    clear: left;
+    margin-left: 0px;
+}
+
+.project-cover:nth-child(3n) {
+    clear: left;
+    margin-right: 0;
+}
+
+.project-cover .image-wrap {
+    margin: 0px 0px 25px;
+}
+
+.images {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.flow-footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 15%;
+    max-height: 100%;
+    border-top: 1px solid black;
+    background-color: rgb(0, 255, 0);
+}
+
+.footer-wrap{
+    margin: 0px 3%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+@media all and (max-width: 768px){
+.flow-header{border-bottom: 1px solid black;}
+.abwks-wrap, .nav-contact{display: none;}
+.nav-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.mini-hamburger, .mini-contact {display: block;}
+.site-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.project-cover{
+    padding-top: 10%;
+    margin: 0;
+
+}
+
+}
