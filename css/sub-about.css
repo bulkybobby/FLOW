@@ -2,7 +2,8 @@
 @font-face{
     font-family: franklinhvy;
     src: url(/fonts/ITCFranklinGothicStd-Hvy.otf) format('opentype');}
-/* 양옆 빈칸 없이, 배경적용 */
+
+    /* 양옆 빈칸 없이, 배경적용 */
 html,body {
     margin: 0;
     padding: 0;
