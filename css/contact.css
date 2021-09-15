@@ -2,6 +2,8 @@
 @font-face{
     font-family: franklinhvy;
     src: url(./fonts/ITCFranklinGothicStd-Hvy.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 ::-webkit-scrollbar{
