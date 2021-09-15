@@ -1,7 +1,7 @@
 /* 웹폰트 */
 @font-face{
     font-family: franklinhvy;
-    src: url(/fonts/ITCFranklinGothicStd-Hvy.otf) format('opentype');}
+    src: url(./fonts/ITCFranklinGothicStd-Hvy.otf) format('opentype');}
 
     /* 양옆 빈칸 없이, 배경적용 */
 html,body {

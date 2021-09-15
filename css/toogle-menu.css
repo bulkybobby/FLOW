@@ -1,6 +1,6 @@
 @font-face {
     font-family: franklinhvy;
-    src: url(/fonts/ITCFranklinGothicStd-Hvy.otf) format('opentype');
+    src: url(./fonts/ITCFranklinGothicStd-Hvy.otf) format('opentype');
 }
 /* universal selector : HTML페이지 내부 모든 태그를 선택 */
 
