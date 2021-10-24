@@ -1,130 +1,41 @@
-/* 구글폰트 폰트 */
-
-/*Libre Baskerville */
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-/*NOTO SANS KR*/
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+KR&display=swap");
 
-/* 스크롤바 안보이게 */
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* 여백 없이 꽉 채운 화면, 배경색상 적용, 폰트 패밀리 적용 */
 * {
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-  font-family: "Libre Baskerville", serif;
-
-  animation: fadein 2000ms ease-out;
-
-  -moz-animation: fadein 2000ms ease-out;
-  /* Firefox */
-
-  -webkit-animation: fadein 2000ms ease-out;
-  /* Safari and Chrome */
-
-  -o-animation: fadein 2000ms ease-out;
-  /* Opera */
+    font-family: "Libre Baskerville", serif;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-/* a클래스의 폰트 */
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 28px;
-}
-
-p {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-.flow-header {
-  z-index: 3;
-  width: 100%;
-  height: 100px;
-  max-height: 100%;
-  position: fixed;
-  top: 0;
-  background-color: rgb(0, 255, 0);
+.nav-wrapper {
+    background-color: #98fd00;
+    padding: 30px;
 }
 
 .nav-menu {
-  margin: 0px 3%;
-  height: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav-about,
-.nav-works {
-  display: inline-block;
+.flow-info dt:first-child {
+    margin-right: 30px;
 }
 
-.nav-about {
-  padding-right: 30px;
+.menu {
+    display: inline-block;
+    justify-content: space-between;
 }
 
-.mini-hamburger {
-  display: none;
-  position: absolute;
-  left: 3%;
+.menu a {
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
 }
 
-.mini-contact {
-  display: none;
-  position: absolute;
-  right: 3%;
+.menu a:hover {
+    border-bottom: 3px solid #000;
 }
