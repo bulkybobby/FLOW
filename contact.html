@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/contact.css">
-    <script src="https://kit.fontawesome.com/15c8f622ad.js" crossorigin="anonymous"></script>
-    <title>스튜디오 플로우 ㅣ STUDIO FLOW GRAPHICS</title>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
+        <!-- Favifon-->
+        <link
+            rel="shortcut icon"
+            href="./images/favicon.ico"
+            type="image/x-icon"
+        />
 
-<body>
+        <!-- Vendor CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
 
-    <div class="contact-header">
-        <div class="nav-menu">
-            <div class="menu-about">
-                <a href="/sub-about.html" type="_self">ABOUT</a>
-            </div>
-            <div class="menu-works">
-                <a class="works-link" href="#" class="works">WORKS</a>
-            </div>
-        </div>
-        <div class="logo-menu">
-            <div class="logo-menu-inner">
-                <a href="/index.html" type="_self">FLOW</a>
-            </div>
-        </div>
-        <div class="contact-menu">
-            <div class="contact-menu-inner">
-                <a href="/sub-contact.html" type="_self">CONTACT</a>
-            </div>
-        </div>
+        <!-- FLOW CSS-->
+        <link rel="stylesheet" href="./css/style.css" />
 
-        <a href="/toogle-menu.html" class="mini-close">
-            <i class="fas fa-times"></i>
-        </a>
-    </div>
+        <title>스튜디오 플로우 ㅣ STUDIO FLOW GRAPHICS</title>
+    </head>
 
-    <div class="contact-main">
-        <h2>CONTACT US
-            <br>
-            <br><span>안녕하세요, 스튜디오 플로우입니다.</span>
-            <br><span>원하시는 작업을 아래의 리스트를 보고 작성해주시면</span>
-            <br><span>48시간 이내에 빠르게 연락드리도록하겠습니다.</span>
-            <br><span>구체적인 설명은 작업 가이드에 큰 도움이 됩니다!</span><br>
-        </h2>
-        <br><span>* 작업문의 외에 궁금하신 사항이 있다면 편하게 질문 부탁드립니다.</span>
-    </div>
-
-    <div class="contact-form-content">
-        <ul class="input-field">
-            <li class="relative mb-24">
-                <label class="absolute top-16 left-0 necessary">Name</label>
-                <div class="pl-96">
-                    <input name="ct_name" class="input-name" type="text" placeholder="담당자 또는 회사 이름을 입력해 주세요.">
+    <body>
+        <!-- nav Start -->
+        <nav class="nav-wrapper">
+            <ul class="nav-menu">
+                <div class="menu-item">
+                    <a href=""><li class="menu">About</li></a>
+                    <a href=""> <li class="menu">Works</li></a>
                 </div>
-            </li>
-            <li class="relative mb-24">
-                <label class="absolute top-16 left-0 necessary">Number</label>
-                <div class="pl-96">
-                    <input name="ct_tel" class="form-input pr-40 max-width-640" type="number"
-                        placeholder="연락처를 입력해 주세요." pattern="\d*">
+                <a href=""> <li class="menu">FLOW</li></a>
+                <!-- <li class="menu4"><a href="#">Workshop</a></li> -->
+                <a href=""> <li class="menu">Contact</li></a>
+            </ul>
+            <ul class="mobile-menu">
+                <a href="#">
+                    <li><i class="fas fa-bars"></i></li
+                ></a>
+                <a href=""> <li class="menu">FLOW</li></a>
+                <a href="#">
+                    <li><i class="fas fa-comments"></i></li
+                ></a>
+            </ul>
+        </nav>
+        <!-- nav End -->
+
+        <!-- contact Form Start-->
+        <section class="contact-wrapper">
+            <div class="contact-title">
+                <div class="contact-form">
+                    <form action=""></form>
                 </div>
-            </li>
-            <li class="relative">
-                <label class="absolute top-16 left-0 necessary">Email</label>
-                <div class="pl-96">
-                    <input name="ct_email" class="form-input pr-40 max-width-640" type="email"
-                        placeholder="메일주소를 입력해 주세요.">
-                </div>
-            </li>
-        </ul>
-        <div class="contact-form-service">
-            <div class="contact-form-service-header">
-                <strong>Service</strong>
-                <p>어떤 서비스가 필요하신가요?<br> 아래 항목을 체크해 주세요.</p>
             </div>
+        </section>
+        <!-- contact Form End-->
 
-        </div>
-    </div>
-
-</body>
-
+        <!-- Build with JS  -->
+        <script
+            src="https://kit.fontawesome.com/15c8f622ad.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
