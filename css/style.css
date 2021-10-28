@@ -7,20 +7,36 @@
 
 body {
     font-family: "Libre Baskerville", serif;
+    color: #000;
+    font-size: 25px;
+}
+
+button,
+a {
+    color: inherit;
 }
 
 .nav-wrapper {
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
     background-color: #98fd00;
-    padding: 30px;
 }
 
 .nav-menu {
-    text-align: center;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    text-align: center;
 }
 
-.flow-info dt:first-child {
+.mobile-menu {
+    display: none;
+}
+
+.menu-item li:first-child {
     margin-right: 30px;
 }
 
@@ -38,4 +54,49 @@ body {
 
 .menu a:hover {
     border-bottom: 3px solid #000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    background-color: #98fd00;
+}
+
+.footer-conents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.footer-conents .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-link a:last-child {
+    margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .mobile-menu a li {
+    }
 }
