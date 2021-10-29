@@ -72,7 +72,7 @@ section {
 }
 
 .project a img {
-    width: 320px;
+    width: calc(1280px / 3);
     height: auto;
 }
 /* section End */
@@ -128,7 +128,17 @@ footer {
         margin: 0px;
     }
 
+    .project a img {
+        width: 50vw;
+    }
+
     footer {
         display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .project a img {
+        width: 100vw;
     }
 }
