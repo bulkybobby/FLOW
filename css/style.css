@@ -8,6 +8,7 @@
 body {
     font-family: "Libre Baskerville", serif;
     color: #000;
+    background-color: #00ff00;
     font-size: 25px;
 }
 
@@ -60,12 +61,6 @@ section {
     background-color: #00ff00;
 }
 
-.main-contents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .project a {
     margin-right: 25px;
     margin-bottom: 30px;
@@ -74,6 +69,10 @@ section {
 .project a img {
     width: calc(1280px / 3);
     height: auto;
+}
+
+.project a img:nth-child(3n) {
+    margin: 0;
 }
 /* section End */
 
@@ -139,6 +138,7 @@ footer {
 
 @media screen and (max-width: 540px) {
     .project a img {
-        width: 100vw;
+        width: 97vw;
+        margin: 0;
     }
 }
