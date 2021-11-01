@@ -258,6 +258,10 @@ footer {
 
     .footer-conents {
         height: 80px;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .social-link {
+        font-size: 25px;
     }
 }
