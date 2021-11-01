@@ -195,7 +195,6 @@ footer {
         justify-content: space-around;
         align-items: center;
         height: 150px;
-        font-size: 1rem;
         text-align: center;
     }
     /* footer End */
@@ -259,6 +258,9 @@ footer {
 
     .footer-conents {
         height: 80px;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .social-link {
+        font-size: 25px;
     }
 }
