@@ -10,47 +10,103 @@
 body {
     font-family: "Libre Baskerville", serif;
     color: #000;
-    background-color: #00ff00;
     font-size: 25px;
-    animation: fadein 3000ms ease-out;
-    -moz-animation: fadein 3000ms ease-out; /* Firefox */
-    -webkit-animation: fadein 3000ms ease-out; /* Safari and  Chrome */
-    -o-animation: fadein 3000ms ease-out; /* Opera */
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+body,
+nav,
+section,
+footer {
+    animation: background-color;
+    animation-delay: 0ms;
+    animation-direction: alternate;
+    animation-duration: 15s;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    animation-name: background-color;
+    animation-play-state: running;
+    animation-timing-function: linear;
 }
-@-moz-keyframes fadein {
-    /* Firefox */
-    from {
-        opacity: 0;
+
+@keyframes background-color {
+    0% {
+        background-color: #ff00ff;
     }
-    to {
-        opacity: 1;
+    4% {
+        background-color: #ff42ab;
     }
-}
-@-webkit-keyframes fadein {
-    /* Safari and Chrome */
-    from {
-        opacity: 0;
+    8% {
+        background-color: #ff6380;
     }
-    to {
-        opacity: 1;
+    12% {
+        background-color: #ff8554;
     }
-}
-@-o-keyframes fadein {
-    /* Opera */
-    from {
-        opacity: 0;
+
+    16% {
+        background-color: #ffa62b;
     }
-    to {
-        opacity: 1;
+    20% {
+        background-color: #ffc700;
+    }
+    24% {
+        background-color: #abcf00;
+    }
+    28% {
+        background-color: #80d100;
+    }
+    32% {
+        background-color: #2bd900;
+    }
+    36% {
+        background-color: #00c72b;
+    }
+    40% {
+        background-color: #00b554;
+    }
+    44% {
+        background-color: #00a180;
+    }
+    48% {
+        background-color: #0093b4;
+    }
+    52% {
+        background-color: #007ede;
+    }
+    56% {
+        background-color: #0063ff;
+    }
+    60% {
+        background-color: #1454ff;
+    }
+    64% {
+        background-color: #2942ff;
+    }
+    68% {
+        background-color: #3d33ff;
+    }
+    72% {
+        background-color: #6612ff;
+    }
+    76% {
+        background-color: #7d00ff;
+    }
+    80% {
+        background-color: #9100ff;
+    }
+    84% {
+        background-color: #a600ff;
+    }
+    88% {
+        background-color: #ba00ff;
+    }
+    92% {
+        background-color: #cf00ff;
+    }
+    96% {
+        background-color: #e300ff;
+    }
+    100% {
+        background-color: #ff00ff;
     }
 }
 
@@ -64,7 +120,6 @@ a {
     width: 100%;
     position: fixed;
     padding: 0 30px;
-    background-color: #00ff00;
 }
 
 .nav-menu {
@@ -99,7 +154,6 @@ a {
 section {
     padding-top: 100px;
     height: auto;
-    background-color: #00ff00;
 }
 
 .project-covers {
@@ -131,7 +185,6 @@ footer {
     left: 0;
     width: 100%;
     padding: 0 30px;
-    background-color: #00ff00;
 }
 
 .footer-conents {
@@ -139,6 +192,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    background-color: transparent;
 }
 
 .flow-title p {
