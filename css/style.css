@@ -12,14 +12,12 @@ body {
     color: #000;
     background-color: #00ff00;
     font-size: 25px;
-}
-
-body {
     animation: fadein 3000ms ease-out;
     -moz-animation: fadein 3000ms ease-out; /* Firefox */
     -webkit-animation: fadein 3000ms ease-out; /* Safari and  Chrome */
     -o-animation: fadein 3000ms ease-out; /* Opera */
 }
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -162,7 +160,7 @@ footer {
 /* footer End */
 
 /*-------------CONTACT--------------*/
-.contact-contents-wrapper {
+/* .contact-contents-wrapper {
     padding: 100px 30px 0;
 }
 
@@ -173,23 +171,20 @@ footer {
     padding: 30px;
     background-color: #fff;
     border-radius: 15px;
-}
+} */
 /*-------------CONTACT--------------*/
 
 @media screen and (max-width: 1024px) {
     /* nav Start*/
     .nav-menu {
-        display: none;
+        height: 80px;
+        font-size: 1rem;
     }
 
     .mobile-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-        font-size: 0.8em;
+        display: none;
     }
+
     /* nav End*/
 
     /* section Start */
@@ -205,13 +200,26 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 150px;
+        height: 100px;
         text-align: center;
+        font-size: 1rem;
     }
     /* footer End */
 }
 
 @media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        font-size: 0.8em;
+    }
+
     .mobile-menu {
         height: 50px;
         font-size: 0.8em;
