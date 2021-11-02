@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+KR&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -152,7 +150,6 @@ a {
 .mobile-menu {
     display: none;
 }
-
 /* nav End  */
 
 /* main-contents Start */
@@ -232,6 +229,26 @@ footer {
     border-radius: 15px;
 } */
 /*-------------CONTACT--------------*/
+
+.about-contents {
+    padding: 100px 30px 0;
+    line-height: 1.5;
+}
+
+.about-title {
+    display: block;
+    text-align: center;
+}
+#flow-founder {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.about-phone {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
 
 @media screen and (max-width: 1024px) {
     /* nav Start*/
@@ -331,6 +348,17 @@ footer {
 
     .footer-conents {
         height: 80px;
+        font-size: 0.8rem;
+    }
+
+    .about-title {
+        font-size: 1rem;
+    }
+    #flow-founder {
+        font-size: 0.8rem;
+    }
+
+    .about-phone {
         font-size: 0.8rem;
     }
 }

@@ -3,60 +3,91 @@
 <meta charset="UTF-8" />
 
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- 스스로 전화걸기 링크 안만듦 -->
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="./css/about.css" />
-  <script src="https://kit.fontawesome.com/15c8f622ad.js" crossorigin="anonymous"></script>
-  <title>스튜디오 플로우 ㅣ STUDIO FLOW GRAPHICS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 스스로 전화걸기 링크 안만듦 -->
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Favifon-->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- build with CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="./css/grid-system.css" />
+
+    <!-- FLOW CSS-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>스튜디오 플로우 ㅣ STUDIO FLOW GRAPHICS</title>
 </head>
 
 <body>
-  <div class="about-header">
-    <div class="nav-menu">
-      <div class="menu-about">
-        <a href="/sub-about.html" type="_self">ABOUT</a>
-      </div>
-      <div class="menu-works">
-        <a class="works-link" href="#" class="works">WORKS</a>
-      </div>
-    </div>
-    <div class="logo-menu">
-      <div class="logo-menu-inner">
-        <a href="/index.html" type="_self">FLOW</a>
-      </div>
-    </div>
-    <div class="contact-menu">
-      <div class="contact-menu-inner">
-        <a href="/sub-contact.html" type="_self">CONTACT</a>
-      </div>
-    </div>
 
-    <a href="/toogle-menu.html" class="mini-close">
-      <i class="fas fa-times"></i>
-    </a>
-  </div>
+    <!-- nav Start -->
+    <nav class="nav-wrapper">
+        <ul class="nav-menu">
+            <ul class="flow-info">
+                <li class="menu"><a href="./about.html">About</a></li>
+                <li class="menu"><a href="">Works</a></li>
+            </ul>
+            <li class="menu"><a href="">Flow</a></li>
+            <li class="menu"><a href="./contact.html">Contact</a></li>
+        </ul>
 
-  <div class="about-contents">
-    <div class="about-container">
-      <h1 class="weareflow">
-        It's really Happy to be immersed in something
-        <br />
-        <br />
-        Kim Seongje, Noh Hyein
-      </h1>
-    </div>
-  </div>
+        <ul class="mobile-menu">
+            <li><a href=""><i class="fas fa-bars"></i></a></li>
+            <li><a href="./index.html" class="menu">FLOW</a></li>
+            <li><a href="./contact.html"><i class="fas fa-comments"></i></a></li>
+        </ul>
+    </nav>
+    <!-- nav End -->
 
-  <footer class="about-footer">
-    <div class="about-contacts">
-      <a class="conacts" href="mailto:studio.flow@gmail.com">studio.flow@gamil.com</a>
-      <br />
-      <span class="phones">+82 010 6880 1084 (KR) <br />+82 010 9877 7560 (KR)</span>
+    <!-- about-main-contents Start-->
+    <div class="main-contents-wrapper">
+        <div class="main-contents">
+            <div class="about-contents">
+                <div class="about-title">
+                    <h1>
+                        It's really Happy to be immersed in something
+                    </h1>
+                    <h3 id="flow-founder">
+                        Kim Seongje, Noh Hyein
+                    </h3>
+                </div>
+                <br>
+                <div class="about-phone">
+                    <span>
+                        +82 010 6880 1084 (KR)
+                        <br>
+                        +82 010 9877 7560 (KR)
+                    </span>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
+    <!-- about-main-contents Start-->
+
+    <!-- footer Start-->
+    <footer>
+        <ul class="footer-conents">
+            <li class="copyright">
+                <p>Copyright ⓒ 2021. All Rights Reserved.</p>
+            </li>
+            <div class="social-link">
+                <a href="https://www.instagram.com/studio_f.l.o.w/">
+                    <li><i class="fab fa-instagram"></i></li>
+                </a>
+                <a href="https://github.com/bulkybobby/FLOW">
+                    <li><i class="fab fa-github-alt"></i></li>
+                </a>
+            </div>
+        </ul>
+    </footer>
+    <!-- footer End-->
+
+    <!-- Build with JS  -->
+    <script src="https://kit.fontawesome.com/15c8f622ad.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
