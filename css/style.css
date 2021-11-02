@@ -143,6 +143,11 @@ a {
     text-align: center;
 }
 
+.logo {
+    padding: 0 30px;
+    text-align: center;
+}
+
 .flow-info li:last-child {
     margin-left: 30px;
 }
@@ -151,6 +156,10 @@ a {
     display: none;
 }
 /* nav End  */
+
+/* toogle menu Start */
+
+/* toogle menu End */
 
 /* main-contents Start */
 .main-contents-wrapper {
@@ -231,7 +240,7 @@ footer {
 /*-------------CONTACT--------------*/
 
 .about-contents {
-    padding: 100px 30px 0;
+    padding: 30px 30px;
     line-height: 1.5;
 }
 
