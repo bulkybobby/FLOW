@@ -9,6 +9,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
@@ -19,7 +21,6 @@ body {
 
 body,
 nav,
-section,
 footer {
     animation: background-color;
     animation-delay: 0ms;
@@ -140,11 +141,11 @@ a {
     text-decoration: none;
 }
 
-.menu-item li {
+.flow-info li {
     text-align: center;
 }
 
-.menu-item a:last-child {
+.flow-info li:last-child {
     margin-left: 30px;
 }
 
@@ -154,8 +155,8 @@ a {
 
 /* nav End  */
 
-/* section Start */
-section {
+/* main-contents Start */
+.main-contents-wrapper {
     padding-top: 100px;
     height: auto;
 }
@@ -180,7 +181,7 @@ section {
     height: auto;
 }
 
-/* section End */
+/* main-contents  End */
 
 /* footer Start */
 footer {
@@ -246,7 +247,7 @@ footer {
     /* nav End*/
 
     /* section Start */
-    section {
+    .main-contents-wrapper {
         padding-top: 50px;
     }
 
