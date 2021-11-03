@@ -17,11 +17,6 @@ a {
   color: inherit;
 }
 
-input:focus,
-input:active {
-  all: unset;
-}
-
 body {
   font-family: "Libre Baskerville", serif;
   color: #000;
@@ -257,6 +252,8 @@ footer {
 }
 
 .contact-contents {
+  display: flex;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -264,10 +261,7 @@ footer {
   font-family: "Libre Baskerville", serif;
 }
 
-.contact-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.input-gorup {
   width: 100%;
   padding: 26px;
   margin-top: 30px;
@@ -276,16 +270,23 @@ footer {
   line-height: 2;
 }
 
-.contact-form form span {
+.input-gorup span {
   color: #ff0000;
 }
 
-.contact-form form input {
+.input-gorup input:focus,
+.input-gorup input:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.input-gorup input {
   width: 600px;
   height: auto;
   font-size: 20px;
   border: none;
   border-bottom: 2px solid #000;
+  background-color: transparent;
 }
 
 .button-wrapper {
@@ -296,7 +297,7 @@ footer {
   margin-top: 30px;
 }
 
-.contact-form form button {
+.button-wrapper button {
   all: unset;
   width: 200px;
   padding: 10px;
@@ -389,10 +390,6 @@ footer {
   .contact-contents-wrapper {
     font-size: 0.8rem;
   }
-
-  .contact-form form input {
-    width: auto;
-  }
 }
 
 @media screen and (max-width: 540px) {
@@ -430,4 +427,8 @@ footer {
     font-size: 0.8rem;
   }
   /* about-content */
+
+  .input-gorup input {
+    width: auto;
+  }
 }
