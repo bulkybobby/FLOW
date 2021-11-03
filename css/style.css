@@ -281,11 +281,15 @@ footer {
 }
 
 .input-gorup input {
+  all: unset;
   width: 600px;
   height: auto;
   font-size: 20px;
   border: none;
   border-bottom: 2px solid #000;
+}
+
+.input-gorup input::placeholder {
   background-color: transparent;
 }
 
