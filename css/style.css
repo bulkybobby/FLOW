@@ -394,6 +394,14 @@ footer {
   .contact-contents-wrapper {
     font-size: 0.8rem;
   }
+
+  .input-gorup {
+    width: 80vw;
+  }
+  .input-gorup input {
+    width: 100%;
+    border-bottom: 1px solid;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -431,8 +439,4 @@ footer {
     font-size: 0.8rem;
   }
   /* about-content */
-
-  .input-gorup input {
-    width: auto;
-  }
 }
