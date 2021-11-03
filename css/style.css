@@ -299,7 +299,7 @@ footer {
 
 .button-wrapper button {
   all: unset;
-  width: 200px;
+  width: auto;
   padding: 10px;
   border-radius: 5px;
   color: #fff;
